@@ -22,8 +22,6 @@ app.post("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
   tasks.push({ desc: req.body.newItem , date : getDate(0) });
   res.redirect('/');
-//   const foundtasks = tasks.filter((task) => task.date === getDate(0));
-//   res.render("index.ejs", { tasks: foundtasks });
 });
 
 app.listen(port, () => {
