@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs", { tasks: foundtasks });
 });
 
+
 app.get("/work", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
   res.render("index.ejs", { tasks: tasks });
