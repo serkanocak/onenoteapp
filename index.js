@@ -34,8 +34,7 @@ const tasks = [
   { desc: "iş 2", date: getDate(-2) },
 ];
 
-
-
+ 
 function getDate(i) {
     let date_ob = new Date();
     date_ob.setDate(date_ob.getDate() + Number(i)); // Yesterday!
